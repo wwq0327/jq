@@ -12,10 +12,41 @@ do {
 
 alert(i);
 }
-</script>
+
+function frontTest() {
+	var i = 0;
+	while (i < 10) {
+		i += 2;
+	}
+	
+	alert(i);
+}
+
+function forTest() {
+	var count = 10;
+	for (var i = 0; i < count; i++){
+		alert(i);
+	}
+}
+
+function doAdd() {
+	if (arguments.length == 1) {
+		alert(arguments[0] + 10);
+	} else if (arguments.length == 2) {
+		alert(arguments[0] + arguments[1]);
+	}
+}
+
 </script>
 </head>
 <body>
-<a href="" onclick="test();">Test()</a>
+<a href="" onclick="test();">do-while</a><br />
+<a href="" onclick="frontTest();">while</a> <br />
+<a href="" onclick="forTest();">for-test</a>
+
+<hr>
+<a href="" onclick="doAdd(10);">doAdd(10)</a><br />
+<a href="" onclick="doAdd(20, 30);">doAdd(30, 20)</a>
+<br />
 </body>
 </html>
