@@ -6,8 +6,15 @@
 <script type="text/javascript" >
 	function sayHi(){
 		var message = "some string";
+		var unmessage;
+		var car = null;
+		var result = Number.MAX_VALUE + Number.MIN_VALUE;
+		alert(isFinite(result));
+		alert(unmessage == undefined);
 		alert(typeof message); // "string"
+		alert(typeof car); // "object"
 		alert("Hi!");
+		alert(message.length);
 	}
 </script>
 </head>
