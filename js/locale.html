@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script type="text/javascript" >
+function myTest() {
+	var person1 = {
+		toLocaleString: function () {
+			return "Nikolaos";
+	    }, // toLocaleString
+		toString: function () {
+			return "Nicholas";
+		} // toString
+	};
+	
+	var person2 = {
+		toLocaleString: function () {
+			return "Grigorios";
+		},
+		
+		toString: function () {
+			return "Greg";
+		}
+	};
+	
+	var people = [person1, person2];
+	alert(people);
+	alert(people.toString());
+	alert(people.toLocaleString());
+}
+
+</script>
+</head>
+<body>
+<a href="" onclick="myTest()">Array Test</a>
+</body>
+</html>
