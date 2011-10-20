@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <title></title>
 <script type="text/javascript" >
+
+// Array obj
 function myTest() {
 	var person1 = {
 		toLocaleString: function () {
@@ -30,9 +32,17 @@ function myTest() {
 	alert(people.toLocaleString());
 }
 
+// join()
+function colorTest() {
+	var colors = ["red", "green", "blue"];
+	alert(colors.join(","));
+	alert(colors.join("||"));
+}
+
 </script>
 </head>
 <body>
-<a href="" onclick="myTest()">Array Test</a>
+<a href="" onclick="myTest()">Array Test</a><br />
+<a href="" onclick="colorTest()">Color Test</a><br />
 </body>
 </html>
