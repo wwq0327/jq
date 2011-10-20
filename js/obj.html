@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script type="text/javascript" >
+function displayInfo(args) {
+	var output = "";
+	
+	if (typeof args.name == "string") {
+		output += "Name: " + args.name + "\n";
+	}
+	
+	if (typeof args.age == "number") {
+	output += "Age: " + args.age + "\n";
+	}
+	
+	alert(output);
+}
+
+function test1() {
+displayInfo({
+	name: "Wyatt.Wang",
+	age: 32
+	});
+}
+
+function test2() {	
+displayInfo({
+	name: "greg"
+	});
+}
+
+</script>
+</head>
+<body>
+<a href="" onclick="test1();">Test1</a><br />
+<a href="" onclick="test2();">Test2</a><br />
+
+<hr>
+</body>
+</html>
