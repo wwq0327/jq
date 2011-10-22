@@ -17,5 +17,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('tr:nth-child(even)').addClass('alt'); // nth-child第一行，even奇数行。
-    $('td:contains(Henry)').addClass('highlight');
+//    $('td:contains(Henry)').addClass('highlight');  // 当前位置
+    $('td:contains(Henry)').nextAll().andSelf().addClass('highlight'); // 元素后所有元素，andSelf()指包含本身
 });
