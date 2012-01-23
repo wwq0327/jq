@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title></title>
 	<script type="text/javascript" >
+	/*
 	var message = "hi";
 	alert(typeof message);
 	alert(typeof(message));
@@ -15,6 +16,20 @@
 	
 	alert(typeof age);
 	alert(typeof ageAsString);
+	*/
+	
+	// var age = 11;
+	// alert(++age);
+	function setName(obj) {
+		obj.name = "Wyatt";
+	}
+	
+	var person = new Object();
+	setName(person);
+	alert(person.name);
+	
+	alert(person instanceof Object);
+	alert(person instanceof Array);
 	
 	</script>
 </head>
